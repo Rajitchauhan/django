@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>all todos</h1>
+    {% for todo in todos %}
+    <h3>{{ todo.title }}</h3>
+    <h4>{{ todo.description }}</h4>
+    <h4>{{ todo.completed }}</h4>
+      {% endfor %}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>profile</title>
+  </head>
+  <body>
+    <h1>welcome user - {{ user.username }}</h1>
+    <a href="{% url 'AddTodo' %}">add todos</a>
+    <a href="{% url 'feedback' %}">feedback</a>
+    {% for todo in todos %}
+    <h3>{{ todo.title }}</h3>
+    <h4>{{ todo.description }}</h4>
+    <h4>{{ todo.completed }}</h4>
+    <h3><a href="{% url 'deleteTodo' todo.id %}">delete todo</a></h3>
+    <h3><a href="{% url 'update' todo.id %}">update todo</a></h3>
+
+    {% endfor %}
+  </body>
+</html>

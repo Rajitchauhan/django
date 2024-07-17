@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>feedback</title>
+  </head>
+  <body>
+    <h2>feedback Form page</h2>
+    <form method="post">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
