@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Detail</title>
+  </head>
+  <body>
+    <h1>{{ book.title }}</h1>
+    <p>Author: {{ book.author }}</p>
+    <p>Published Date: {{ book.published_date }}</p>
+    <p>ISBN: {{ book.isbn }}</p>
+    <p>Pages: {{ book.pages }}</p>
+    <p>Language: {{ book.language }}</p>
+    <a href="{% url 'booklist' %}">Back to Books List</a>
+  </body>
+</html>
